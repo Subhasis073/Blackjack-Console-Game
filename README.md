@@ -1,56 +1,32 @@
-**1. Description**
+**Overview**
 
-A Python-based console version of the popular Blackjack card game. The player competes against a computer dealer to reach a score as close to 21 as possible without going over. The rules for Aces, dealer logic, and win/loss conditions follow standard Blackjack gameplay.
+The Blackjack Console Game is a Python implementation of the classic casino card game — Blackjack (21).
+In this game, the player competes against the computer to get as close to 21 as possible without exceeding it. The game dynamically tracks scores, evaluates win/loss conditions, and offers a realistic gameplay experience right in the terminal.
 
-**2. How It Works**
+This project reflects a significant step in my Python learning journey — moving from simple scripts to structured, logic-heavy, and replayable applications.
 
-1.The program prints a logo at the start of each game round.
+Learning Objectives & Technical Implementation
 
-2.Both player and dealer are each dealt two cards.
+Through this project, I explored a variety of intermediate-to-advanced Python programming concepts:
 
-3.The player can choose to draw more cards (hit) or pass (stand).
+**Concept	& Description**
 
-4.When it's the dealer's turn, the dealer draws until reaching a minimum score of 17.
+Functions & Modular Design - Used multiple helper functions (deal_card(), calculate_score(), compare(), etc.) to maintain organized and reusable code.
+Randomization (random.choice)	- Implemented a pseudo-random card selection mechanism to mimic real card draws.
+Control Flow & Game Logic	- Designed a turn-based flow for player and computer moves, with conditions to check for Blackjack, busts, and draws.
+Score Calculation & Logic Handling - Managed edge cases like treating Ace (11) as 1 when total exceeds 21.
+While Loops & Replay Option -	Enabled continuous gameplay until the player chooses to exit, demonstrating control structure handling.
+Comparative Conditions - Built custom comparison logic in the compare() function to determine game outcomes.
+Use of External Modules -	Imported a custom art module for game logo display, improving user experience in the console.
 
-5.Aces automatically adjust between 11 and 1 as needed.
+This project improved my understanding of algorithmic thinking, logical sequencing, and real-world problem simulation using Python
 
-6.Special "Blackjack" (an Ace and 10-valued card as starting two cards) is handled.
+**Example Gameplay**
 
-7.The winner is declared based on final hands and scores.
-
-**Operators and Functions Used**
-
-Operators:
-
-1. = (Assignment): Assigning values to variables and lists.
-
-2. +, -, *, /: Used for arithmetic calculations, particularly in score and loop range.
-
-3. []: List indexing and creation (e.g., user_cards and appending cards).
-
-4. ==, !=, >, <, >=, <=: Used for equality and comparison checks throughout flow control.
-
-5. in: Checks membership for handling Aces and prompt choices.
-
-
-Functions and Methods:
-
-1. print(): Displays game state, prompts, and results.
-
-2. input(): Collects user's choices at various stages.
-
-3. random.choice(): Selects random cards from the deck for both player and dealer.
-
-4. sum(): Totals up the values in a list of cards for score calculation.
-
-5. .append(): Adds new cards to user_cards or computer_cards during play.
-
-6. .remove(): Replaces an Ace value in the player's/dealer's hand when needed.
-
-7. User-defined functions: deal_card(), calculate_score(), compare(), and play_game() encapsulate the main logic and game flow.
-
-8. while and for loops: Used for main game loop, drawing cards, and dealer decision logic.
-
-9. and, or: Used within conditionals to combine multiple logical checks.
-
-10. : Used for list methods like .append() and .remove() as well as string formatting and module referencing.
+Welcome to Blackjack!
+Your cards: [10, 7], current score: 17
+Computer's first card: 9
+Type 'y' to get another card, type 'n' to pass: y
+Your cards: [10, 7, 4], current score: 21
+Computer's final hand: [9, 10], final score: 19
+You win 😃

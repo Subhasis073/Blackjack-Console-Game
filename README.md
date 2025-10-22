@@ -11,19 +11,13 @@ Through this project, I explored a variety of intermediate-to-advanced Python pr
 
 **Concept	& Description**
 
-Functions & Modular Design - Used multiple helper functions (deal_card(), calculate_score(), compare(), etc.) to maintain organized and reusable code.
-
-Randomization (random.choice)	- Implemented a pseudo-random card selection mechanism to mimic real card draws.
-
-Control Flow & Game Logic	- Designed a turn-based flow for player and computer moves, with conditions to check for Blackjack, busts, and draws.
-
-Score Calculation & Logic Handling - Managed edge cases like treating Ace (11) as 1 when total exceeds 21.
-
-While Loops & Replay Option -	Enabled continuous gameplay until the player chooses to exit, demonstrating control structure handling.
-
-Comparative Conditions - Built custom comparison logic in the compare() function to determine game outcomes.
-
-Use of External Modules -	Imported a custom art module for game logo display, improving user experience in the console.
+1. Functions & Modular Design - Used multiple helper functions (deal_card(), calculate_score(), compare(), etc.) to maintain organized and reusable code.
+2. Randomization (random.choice)	- Implemented a pseudo-random card selection mechanism to mimic real card draws.
+3. Control Flow & Game Logic	- Designed a turn-based flow for player and computer moves, with conditions to check for Blackjack, busts, and draws.
+4. Score Calculation & Logic Handling - Managed edge cases like treating Ace (11) as 1 when total exceeds 21.
+5. While Loops & Replay Option -	Enabled continuous gameplay until the player chooses to exit, demonstrating control structure handling.
+6. Comparative Conditions - Built custom comparison logic in the compare() function to determine game outcomes.
+7. Use of External Modules -	Imported a custom art module for game logo display, improving user experience in the console.
 
 This project improved my understanding of algorithmic thinking, logical sequencing, and real-world problem simulation using Python
 
